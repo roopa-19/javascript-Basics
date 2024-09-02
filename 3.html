@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name" name="name" placeholder="enter name" value=""><br>
+    <select name="gender" id="gender">
+        <option value="">Select your Gender</option>
+        <option value="M">M</option>
+        <option value="F">F</option>
+    </select><br>
+    <input type="email" id="mail" placeholder="roo@gmail.com" name="mail" value=""><br>
+    <input type="number" id="phn" placeholder="78068"  name="phone" value=""><br>
+    <button onClick="showName()">Show Name</button>
+    <button onClick="showGender()">Show Gender</button>
+    <button onClick="showEmail()">Show Email</button>
+    <button onClick="showPhoneNumber()">Show Phone Number</button>
+
+
+
+
+    <script>
+        function showName(){
+            alert(document.getElementById("name").value);
+        }
+        function showGender(){
+            alert(document.getElementById("gender").value);
+        }
+        function showEmail(){
+            alert(document.getElementById("mail").value);
+        }
+        function showPhoneNumber(){
+            alert(document.getElementById("phn").value);
+        }
+    </script>
+</body>
+</html>
